@@ -11,7 +11,7 @@ const Hero = () => {
           <div className='hidden lg:block'></div>
           <div className='text-[80px] sm:text-[100px] font-bold leading-tight flex justify-center items-center'>
             <div>
-              <p data-aos="fade-left">I'm</p>
+              <p data-aos="fade-left">I am</p>
               <p  data-aos="fade-left">Aiysha</p>
               <p data-aos="fade-left">Noor</p>
             </div>
