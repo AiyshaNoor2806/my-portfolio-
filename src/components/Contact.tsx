@@ -3,7 +3,12 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsTelephone } from "react-icons/bs";
 
 export default function Contact() {
-  return (
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+    console.log('Form submitted');
+};
+
+  return ( 
     <div id='contact' className='pt-32 container'>
         <div className='grid md:grid-cols-2 gap-10'>
             <div className='space-y-8'>
@@ -19,6 +24,7 @@ export default function Contact() {
                 </div>
             </div>
             <div className='space-y-8'>
+                <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
                 <div className='flex flex-col gap-1'>
                     <label htmlFor="name">Name</label>
                     <input type="text"
@@ -32,15 +38,23 @@ export default function Contact() {
                     id='email' />
                  </div>
                  <div className='flex flex-col gap-1' data-aos="fade-left">
-                    <label htmlFor="email">Email</label>
+                    <label htmlFor="msg">Message</label>
                     <textarea 
                     className='bg-transparent border border-accent'
-                    id='msg' rows={8}>
+                    id='msg' 
+                    rows={4}
+                    required
+                    >
                         </textarea> 
                  </div>
-                 <button className='bg-amber-400 p-2 px-6' data-aos="fade-left">Submit</button>
-            </div>
+                 <button type='submit' className='bg-amber-400 p-2 px-6' data-aos="fade-left">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
-    </div>
-  )
+  );
 }
+
+
