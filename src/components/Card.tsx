@@ -16,7 +16,7 @@ const Card:React.FC<propsType> = ({title, desc, img, tags }) => {
             className='w-[300px] sm:w-[350px] h-[auto] '
             src= {img}
             width={350}
-            height={350}
+            height={200}
             alt={title}
             />
         </div>
