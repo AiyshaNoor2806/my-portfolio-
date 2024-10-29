@@ -1,6 +1,7 @@
 import React from 'react'
 import Heading from './Heading';
 import Card from './Card'
+import Link from 'next/link'
 
 const data = [
     {
@@ -8,28 +9,32 @@ const data = [
         title: "Static Resume Builder.",
         desc: "A next.js and typescript based form for building Resume.",
         img:"/Project_One.png",
-        tags: ["Next.js", "Node","CSS","Typescript"]
+        tags: ["Next.js", "Node","CSS","Typescript"],
+        link:"https://milestone2resumeby-aiysha-noor.vercel.app/"
     },
     {
         id:1,
         title:"Editable Resume Builder.",
         desc: "A next.js and typescript based form for editing Resume.",
         img:"/Project_two.png",
-        tags: ["Next.js", "Node","CSS","Typescript"]
+        tags: ["Next.js", "Node","CSS","Typescript"],
+        link:"https://editable-resume-by-anq.vercel.app/"
     },
     {
         id:2,
         title:"Dynamic Resume Builder with preview.",
         desc: "A next.js and typescript based form for editing Resume.",
         img:"/Project_three.png",
-        tags: ["Next.js", "Node","CSS","Typescript"]
+        tags: ["Next.js", "Node","CSS","Typescript"],
+        link:"https://milestone03-dynamic-resume-builder-by-anq.vercel.app/"
     },
     {
         id:3,
         title:"Country List.",
         desc: "A next.js and typescript based form for editing Resume.",
         img:"/Project_four.png",
-        tags: ["Next.js", "Node","CSS","Typescript"]
+        tags: ["Next.js", "Node","CSS","Typescript"],
+        link:"https://dynamic-routes-one.vercel.app/"
     },
 ]
 
