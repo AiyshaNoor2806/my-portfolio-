@@ -43,16 +43,21 @@ function Project() {
     <div id='project' className='container pt-32'>
         <Heading title='My Projects' />
         <div className='grid gap-10 xl:gap-y-10 md:grid-cols-2 lg:grid-cols-3 place-items-center'>
-           {data.map((el) => (<Card
-           key={el.id}
+           {data.map((el) => (
+            <Link href={el.link} key={el.id} passHref>
+            <div>
+            <Card
            title={el.title}
            desc={el.desc}
            img={el.img}
            tags={el.tags}
-           />))} 
-        </div>
+        />
+           </div>
+           </Link>
+           ))}
+           </div>
     </div>
   )
 }
 
-export default Project
+export default Project;
