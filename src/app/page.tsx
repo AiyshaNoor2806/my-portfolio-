@@ -6,7 +6,6 @@ import Contact from "@/components/Contact";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Hero from "@/components/Hero"
-import Heros from "@/components/Heros";
 import Project from "@/components/Project";
 import Skills from "@/components/Skills";
 import AOS from "aos"
