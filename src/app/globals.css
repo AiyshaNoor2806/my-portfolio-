@@ -6,15 +6,13 @@
   body {
     color: rgb(196, 40, 113);
     background-color: black;
-     background-image: url(../../public/my-profile.png) class="rounded-full" alt="Profile Picture"; 
-     background-size: cover;
-     background-position: center;
+    background-size: cover;
+    background-position: center;
   }
- 
 }
 
- @layer components{
-  .menu link {
+@layer components {
+  .menu-link {
     @apply cursor-pointer hover:text-[#c5c5c5];
   }
   .tags {
@@ -22,15 +20,11 @@
     margin-right: 0.5rem;
     margin-top: 0.5rem;
     padding: 3px 10px;
-    display: inline-block;
     color: #fff;
     font-size: 12px;
     @apply text-xs sm:text-sm md:text-base;
   }
 
-  .tags:last-child {
-    margin-right: 0;
-  }
 
   .tags:nth-child(2) {
     background-color: #a55eea;
@@ -38,14 +32,14 @@
 
   .tags:nth-child(3) {
     background-color: #eb4d4b;
-  } 
+  }
 
   .tags:nth-child(4) {
     background-color: #db9f10;
   }
-  .tags-container {
-    @apply flex flex-wrap;
+
+  /* Hover effect for cards */
+  .hover\\:shadow-lg {
+    @apply shadow-lg hover:shadow-2xl;
   }
-
-} 
-
+}
