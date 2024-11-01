@@ -45,7 +45,8 @@
   
   /* Responsive Spacing for #hero */
   #hero {
-    @apply mt-10 sm:mt-16 md:mt-20 lg:mt-24 xl:mt-28;
+    @apply mt-10 sm:mt-16 md:mt-20 lg:mt-24 xl:mt-28 flex flex-col lg:flex-row;
+    align-items: center;
   }
 
   .text-pretty {
@@ -59,10 +60,10 @@
     margin-top: 10px;
   }
 
-  /* Add Responsive Text and Spacing for Laptops */
+  /* Adjust text and spacing on larger screens */
   @screen lg {
     #hero {
-      @apply mx-16;
+      @apply mx-16 lg:justify-between;
     }
 
     .text-pretty {

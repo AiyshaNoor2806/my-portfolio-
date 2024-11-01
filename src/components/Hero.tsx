@@ -4,19 +4,19 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="min-h-screen w-full mt-20 ml-5 sm:ml-10 md:ml-20 flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8"
+      className="min-h-screen w-full mt-20 ml-5 sm:ml-10 md:ml-20 flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8 lg:justify-between"
     >
       <img
         src="/my-profile.png"
         alt="My Profile"
-        className="w-2/3 sm:w-1/3 md:w-1/4 lg:w-1/5 object-cover"
+        className="w-2/3 sm:w-1/2 md:w-1/3 lg:w-1/4 object-cover rounded-full"
         style={{
-          maxWidth: "20%",
+          maxWidth: "250px",
           marginTop: "10px",
         }}
       />
       {/* Text Section */}
-      <div className="text-left flex flex-col justify-self-start p-2 lg:p-0 mt-10 lg:mt-36">
+      <div className="text-left flex flex-col justify-center lg:justify-start p-4 lg:p-0 mt-10 lg:mt-0">
         <div className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
           <p className="text-pretty" data-aos="fade-left">I am Aiysha Noor</p>
         </div>
