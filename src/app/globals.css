@@ -16,6 +16,7 @@
     @apply cursor-pointer hover:text-[#c5c5c5];
   }
 
+  /* Styling for tags and other UI components */
   .tags {
     background-color: #0abde3;
     margin-right: 0.5rem;
@@ -43,49 +44,73 @@
     @apply shadow-lg hover:shadow-2xl;
   }
   
-  /* Responsive Spacing for #hero */
+  /* Hero Section Styling */
   #hero {
-    @apply mt-10 sm:mt-16 md:mt-20 lg:mt-24 xl:mt-28 flex flex-col lg:flex-row;
-    align-items: center;
+    @apply mt-10 sm:mt-16 md:mt-20 lg:mt-24 xl:mt-28 flex flex-col lg:flex-row items-start lg:justify-start p-4;
   }
 
-  .text-pretty {
-    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
+  /* Heading with Gradient and Underline Accent */
+  .heading-pretty {
+    background: linear-gradient(to right, #e94057, #f27121);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    position: relative;
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl;
   }
 
-  /* Adjust Image Size and Margin */
-  #hero img {
-    @apply w-2/3 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5;
-    max-width: 250px;
-    margin-top: 10px;
+  /* Underline accent for heading */
+  .heading-pretty::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 3px;
+    background: #f27121;
+    margin-top: 8px;
+    margin-left: 10px;
+    border-radius: 4px;
   }
 
-  /* Adjust text and spacing on larger screens */
+  /* Paragraph Styling */
+  .paragraph-text {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    @apply text-lg leading-relaxed max-w-prose mt-4 text-justify lg:text-left lg:mt-6;
+    color: #e0e0e0;
+  }
+
+  /* Responsive Adjustments */
   @screen lg {
     #hero {
-      @apply mx-16 lg:justify-between;
+      @apply mx-4 lg:justify-start;
     }
 
-    .text-pretty {
-      @apply text-5xl;
+    .heading-pretty {
+      font-size: 3rem;
     }
 
-    #hero p {
-      @apply text-lg leading-relaxed;
+    .paragraph-text {
+      font-size: 1.125rem;
+      line-height: 1.875rem;
+      max-width: 600px;
     }
   }
 
   @screen xl {
     #hero {
-      @apply mx-24;
+      @apply mx-8;
     }
 
-    .text-pretty {
-      @apply text-6xl;
+    .heading-pretty {
+      font-size: 3.5rem;
     }
 
-    #hero p {
-      @apply text-xl leading-relaxed;
+    .paragraph-text {
+      font-size: 1.25rem;
+      line-height: 2rem;
+      max-width: 650px;
     }
   }
 }
